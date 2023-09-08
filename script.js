@@ -25,14 +25,21 @@ form.addEventListener('submit', (e) => {
         newDiv.style.backgroundColor = 'pink';
         newDiv.style.border = '1px solid aqua';
 
-        if (userinput.value > 65) {
+        if (userinput.value > 64) {
             break;
         }
+        newDiv.addEventListener('contextmenu', function(E) {
+            console.log(this)
+            this.style.backgroundColor = 'red';
+        })
+
+        newDiv.addEventListener('click', function(E) {
+            console.log(this)
+            this.style.backgroundColor = 'pink';
+        })
+
+
 
 
     }
 });
-
-grid.addEventListener('click', (E) => {
-    console.log(E);
-})
