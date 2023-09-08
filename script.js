@@ -32,3 +32,7 @@ form.addEventListener('submit', (e) => {
 
     }
 });
+
+grid.addEventListener('click', (E) => {
+    console.log(E);
+})
