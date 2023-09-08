@@ -32,7 +32,3 @@ form.addEventListener('submit', (e) => {
 
     }
 });
-
-grid.addEventListener('click', (e) => {
-    e.style.backgroundColor = 'blue';
-})
