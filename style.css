@@ -17,7 +17,7 @@ body {
     width: 500px;
     height: 500px;
     background-color: rgb(245, 245, 245);
-    box-shadow: 10px 10px 88px -10px rgba(0, 0, 0, 0.45);
+    box-shadow: 10px 10px 88px -10px rgba(0, 109, 187, 0.45);
 }
 
 .wrapper {
@@ -26,4 +26,30 @@ body {
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
+}
+
+.form {
+    margin: 20px;
+}
+
+.form .userinput input {
+    width: 120px;
+    outline: none;
+}
+
+.form input {
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 10px;
 }
