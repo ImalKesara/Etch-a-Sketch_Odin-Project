@@ -4,6 +4,7 @@ let userinput = document.querySelector('.userinput');
 const grid = document.querySelector('.grid');
 let userTotal;
 
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     console.log(userinput.value);
@@ -18,13 +19,20 @@ form.addEventListener('submit', (e) => {
         console.log('four');
         let newDiv = document.createElement('div');
         newDiv.setAttribute('class', 'grid');
-        // console.log(newDiv);
         wrapper.appendChild(newDiv);
-        newDiv.style.width = '500px';
-        newDiv.style.height = '500px';
-        newDiv.style.backgroundColor = 'red';
-        newDiv.style.border = '1px solid white';
+        newDiv.style.width = 500 / userinput.value + 'px';
+        newDiv.style.height = 500 / userinput.value + 'px';
+        newDiv.style.backgroundColor = 'pink';
+        newDiv.style.border = '1px solid aqua';
+
+        if (userinput.value > 65) {
+            break;
+        }
 
 
     }
 });
+
+grid.addEventListener('click', (e) => {
+    e.style.backgroundColor = 'blue';
+})
